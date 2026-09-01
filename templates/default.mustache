@@ -93,24 +93,21 @@ label input[type="checkbox"] {
   color: var(--entry-author-color);
 }
 
-.item-meta > ul > li {
-  color: var(--item-meta-li-color);
+.item-meta {
+    color: var(--item-meta-li-color);
 }
 
-.item-meta > ul > li > a {
-  color: var(--item-meta-li-color);
+.item-meta a {
+  color: var(--base0A);
+  font-weight: 600;
 }
 
-.item-meta > ul > li > a:hover {
+.item-meta :is(a:is(:focus, :hover), button:is(:focus, :hover)) {
   color: var(--item-meta-focus-color);
 }
 
 .item-meta-icons li :is(a, button) {
   color: var(--item-meta-li-color);
-}
-
-.item-meta-icons li :is(a, button):hover {
-  color: var(--item-meta-focus-color);
 }
 
 :root {
